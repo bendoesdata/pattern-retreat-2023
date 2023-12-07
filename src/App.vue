@@ -29,7 +29,7 @@
               variability in genetic risk factors.
             </p>
             <div>
-              <img src="@/assets/diagram.png" style="width: 100%" alt="">
+              <img src="@/assets/diagram.png" style="width: 90%" alt="">
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@
             <v-expansion-panel expanded="true">
               <v-expansion-panel-title color="#F36C3E"> 
                 <div class="acc-header">
-                <img src="@/assets/circle-icon.png" alt="">
+                <img src="@/assets/support.svg" alt="">
                 <h3> MINERVA: An interactive survey that predicts the likelihood of neurodevelopmental genetic variants in autistic children </h3>
               </div>
               </v-expansion-panel-title>
@@ -70,7 +70,12 @@
                     </p>
                   </div>
                   <div class="grid-main">
-                    <div class="gray-box"></div>
+                    <div class="video-wrapper">
+                      <video autoplay muted loop>
+                          <source src="@/assets/minerva-screen-recording.mov" type="video/mp4">
+                          Your browser does not support the video tag.
+                      </video>
+                    </div>
                   </div>
                 </div>
               </v-expansion-panel-text>
@@ -79,7 +84,7 @@
             <v-expansion-panel>
               <v-expansion-panel-title color="#00AFD7"> 
                 <div class="acc-header">
-                  <img src="@/assets/bacteria-icon.png" alt="">
+                  <img src="@/assets/microbiology.svg" alt="">
                 <h3>GutSee: A mobile app to help patients track and visualize their gut microbiome data</h3>  
                 </div>
               </v-expansion-panel-title>
@@ -94,8 +99,11 @@
                     </p>
                   </div>
                   <div class="grid-main">
-                    <div class="gray-box">
-
+                    <div class="video-wrapper">
+                      <video autoplay muted loop>
+                          <source src="@/assets/gutsee-screen.mov" type="video/mp4">
+                          Your browser does not support the video tag.
+                      </video>
                     </div>
                   </div>
                 </div>
@@ -104,7 +112,7 @@
             <v-expansion-panel>
               <v-expansion-panel-title color="#69488E">
                 <div class="acc-header">
-                  <img src="@/assets/dna-icon.png" style="height: 25px; margin-left: 5px" alt="">
+                  <img src="@/assets/genetics.svg" style="height: 25px; margin-left: 5px" alt="">
                   <h3 style="margin-left: 15px">Polygenic Scores Explained: A scrolling visual explainer on how to interpret polygenic risk scores</h3>
                 </div>
               </v-expansion-panel-title>
@@ -123,8 +131,11 @@
                     </p>
                   </div>
                   <div class="grid-main">
-                    <div class="gray-box">
-                      <img src="@/assets/dna.gif" alt="">
+                    <div class="video-wrapper">
+                      <video autoplay muted loop>
+                          <source src="@/assets/polygenic-screen.mov" type="video/mp4">
+                          Your browser does not support the video tag.
+                      </video>
                     </div>
                   </div>
                 </div>
@@ -183,8 +194,7 @@ export default {
   padding: 1rem;
 }
 
-.gray-box {
-  background-color: #d2d2d2;
+.video-wrapper {
   width: 100%;
   height: 500px;
 }
@@ -218,7 +228,12 @@ p {
   width: auto;
 }
 
-.gray-box img {
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+}
+
+.video-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
