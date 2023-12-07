@@ -1,4 +1,6 @@
-# default
+# Single Page Vue app for Pattern 2023 E-Poster
+
+NOTE: screen recording files are too large to host in Github. You can download them from the shared Pattern Drive under the "2023 Posters" folder. Once downloaded, put them under `src/assets/` and you should be good to go.
 
 ## Project setup
 
